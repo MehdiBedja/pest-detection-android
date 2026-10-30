@@ -5,6 +5,14 @@ A native Android app that detects 13 agricultural pests in real time, fully offl
 > Part of the [Mobile Agricultural Pest Detection System](https://github.com/MehdiBedja/pest-detection-system):
 > [AI research](https://github.com/MehdiBedja/pest-detection-computer-vision) · Android app · [Backend API](https://github.com/MehdiBedja/pest-detection-api)
 
+<p align="center">
+  <img src="docs/images/app-detection.jpg" width="260" alt="Pest detected in the app, with bounding box and confidence">
+  &nbsp;&nbsp;
+  <img src="docs/images/model-output.jpg" width="420" alt="YOLOv11s output on a test image">
+</p>
+
+On the left, a detection inside the app, running offline on the phone. On the right, the same YOLOv11s model run on a test image.
+
 ## Features
 
 - On-device detection: take a photo or pick an image from storage, then run YOLOv11s through TFLite. No network is needed.
