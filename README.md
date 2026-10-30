@@ -11,7 +11,7 @@ A native Android app that detects 13 agricultural pests in real time, fully offl
   <img src="docs/images/model-output.jpg" width="420" alt="YOLOv11s output on a test image">
 </p>
 
-Left: the app detecting a leafhopper (Cicadellidae, 80%) offline on a Samsung phone, with a 408 ms inference time and the matching pesticide recommendation. Right: the same YOLOv11s model on a test image.
+Left: the app detecting a leafhopper (Cicadellidae, 80%) offline on the phone, with a 408 ms inference time and the matching pesticide recommendation. Right: the same YOLOv11s model on a test image.
 
 ## Features
 
