@@ -1,35 +1,21 @@
-# ScanPest AI · Android App
+# Pest detection: Android app
 
-![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?logo=kotlin&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4)
-![TFLite](https://img.shields.io/badge/TensorFlow%20Lite-on--device-FF6F00)
-[![Android CI](https://github.com/MehdiBedja/pest-detection-android/actions/workflows/android.yml/badge.svg)](https://github.com/MehdiBedja/pest-detection-android/actions/workflows/android.yml)
-![minSdk](https://img.shields.io/badge/minSdk-24-green)
-
-A native Android app that **detects 13 agricultural pests in real time, fully offline**, using a YOLOv11s model (93.8% mAP@50) running on the phone with TensorFlow Lite. For every detected pest it shows the species, a confidence score and recommended treatments. History syncs to the cloud when the phone is back online.
+A native Android app that detects 13 agricultural pests in real time, fully offline, using a YOLOv11s model (93.8% mAP@50) running on the phone with TensorFlow Lite. For every detected pest it shows the species, a confidence score and recommended treatments. History syncs to the cloud when the phone is back online.
 
 > Part of the [Mobile Agricultural Pest Detection System](https://github.com/MehdiBedja/pest-detection-system):
-> [AI research](https://github.com/MehdiBedja/pest-detection-computer-vision) · **Android app** · [Backend API](https://github.com/MehdiBedja/pest-detection-api)
-
-## Screenshots
-
-| Home | Detection | Pest details | History | Stats |
-| --- | --- | --- | --- | --- |
-| ![Home](docs/screenshots/home.png) | ![Detection](docs/screenshots/detection.png) | ![Pest details](docs/screenshots/pest-details.png) | ![History](docs/screenshots/history.png) | ![Stats](docs/screenshots/stats.png) |
-
-<!-- Screenshot placeholders: add phone screenshots (1080x2340) to docs/screenshots/ -->
+> [AI research](https://github.com/MehdiBedja/pest-detection-computer-vision) · Android app · [Backend API](https://github.com/MehdiBedja/pest-detection-api)
 
 ## Features
 
-- **On-device detection**: take a photo or pick an image from storage, then run YOLOv11s through TFLite. No network is needed.
-- **Bounding boxes + confidence** drawn over the image, with non-max suppression.
-- **Treatment recommendations** mapped to each detected pest from a bundled pest knowledge base.
-- **Pest encyclopedia**: browse every supported pest with descriptions and control methods.
-- **Offline-first history**: detections, images and notes are stored in Room, then synced to the backend (upload, cross-device restore, soft-delete propagation, last-write-wins notes).
-- **Statistics dashboard** of detections over time (MPAndroidChart).
-- **Accounts**: email/password or Google Sign-In, with change and set password.
-- **Multilingual**: English, French and Arabic (RTL).
-- **Onboarding**, settings and a community forum link.
+- On-device detection: take a photo or pick an image from storage, then run YOLOv11s through TFLite. No network is needed.
+- Bounding boxes + confidence drawn over the image, with non-max suppression.
+- Treatment recommendations mapped to each detected pest from a bundled pest knowledge base.
+- Pest encyclopedia: browse every supported pest with descriptions and control methods.
+- Offline-first history: detections, images and notes are stored in Room, then synced to the backend (upload, cross-device restore, soft-delete propagation, last-write-wins notes).
+- Statistics dashboard of detections over time (MPAndroidChart).
+- Accounts: email/password or Google Sign-In, with change and set password.
+- Multilingual: English, French and Arabic (RTL).
+- Onboarding, settings and a community forum link.
 
 ## Architecture
 
@@ -105,7 +91,7 @@ cd pest-detection-android
 ./gradlew installDebug           # install on a connected device / emulator
 ```
 
-Or open the folder in Android Studio and press **Run**.
+Or open the folder in Android Studio and press Run.
 
 The backend URL is set in `app/src/main/java/com/bedjamahdi/scanpestai/network/UrlFile.kt`. Detection works without it; only account and sync features need the API.
 
@@ -134,4 +120,4 @@ app/src/main/assets/  # yolov11s TFLite model, labels, pest info (EN/FR/AR)
 
 ## Author
 
-**Mahdi Bedja**, AI Engineer · [Portfolio](https://mehdibedja.github.io) · [LinkedIn](https://www.linkedin.com/in/mahdi-bedja-0b94031b3/)
+Mahdi Bedja · [Portfolio](https://mehdibedja.github.io) · [LinkedIn](https://www.linkedin.com/in/mahdi-bedja-0b94031b3/)
