@@ -3,13 +3,13 @@
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?logo=kotlin&logoColor=white)
 ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4)
 ![TFLite](https://img.shields.io/badge/TensorFlow%20Lite-on--device-FF6F00)
-[![Android CI](https://github.com/MehdiBedja/pest_detection_app_frontend/actions/workflows/android.yml/badge.svg)](https://github.com/MehdiBedja/pest_detection_app_frontend/actions/workflows/android.yml)
+[![Android CI](https://github.com/MehdiBedja/pest-detection-android/actions/workflows/android.yml/badge.svg)](https://github.com/MehdiBedja/pest-detection-android/actions/workflows/android.yml)
 ![minSdk](https://img.shields.io/badge/minSdk-24-green)
 
 A native Android app that **detects 13 agricultural pests in real time, fully offline**, using a YOLOv11s model (93.8% mAP@50) running on the phone with TensorFlow Lite. For every detected pest it shows the species, a confidence score and recommended treatments. History syncs to the cloud when the phone is back online.
 
 > Part of the [Mobile Agricultural Pest Detection System](https://github.com/MehdiBedja/pest-detection-system):
-> [AI research](https://github.com/MehdiBedja/pest-detection-computer-vision) · **Android app** · [Backend API](https://github.com/MehdiBedja/pest_detection_app_backend)
+> [AI research](https://github.com/MehdiBedja/pest-detection-computer-vision) · **Android app** · [Backend API](https://github.com/MehdiBedja/pest-detection-api)
 
 ## Screenshots
 
@@ -99,8 +99,8 @@ flowchart LR
 Requirements: Android Studio (Ladybug or newer), JDK 17, Android SDK 35.
 
 ```bash
-git clone https://github.com/MehdiBedja/pest_detection_app_frontend.git
-cd pest_detection_app_frontend
+git clone https://github.com/MehdiBedja/pest-detection-android.git
+cd pest-detection-android
 ./gradlew assembleDebug          # APK in app/build/outputs/apk/debug/
 ./gradlew installDebug           # install on a connected device / emulator
 ```
