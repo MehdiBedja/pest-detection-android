@@ -3,6 +3,7 @@
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.0-7F52FF?logo=kotlin&logoColor=white)
 ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4)
 ![TFLite](https://img.shields.io/badge/TensorFlow%20Lite-on--device-FF6F00)
+[![Android CI](https://github.com/MehdiBedja/pest_detection_app_frontend/actions/workflows/android.yml/badge.svg)](https://github.com/MehdiBedja/pest_detection_app_frontend/actions/workflows/android.yml)
 ![minSdk](https://img.shields.io/badge/minSdk-24-green)
 
 A native Android app that **detects 13 agricultural pests in real time, fully offline**, using a YOLOv11s model (93.8% mAP@50) running on the phone with TensorFlow Lite. For every detected pest it shows the species, a confidence score and recommended treatments. History syncs to the cloud when the phone is back online.
